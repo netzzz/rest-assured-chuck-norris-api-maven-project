@@ -18,9 +18,11 @@ mvn -Dlog4j.configurationFile=src\test\resources\loggerconfig\log4j2.xml -Dsuref
     
 <h3>Test Documentation:</h3>
 
-Overview of the Test Cases and Test Suites implemented using Rest Assured and TestNG for testing the Chuck Norris API.  
-  
-<b>Test Cases</b>  
+* [Test Cases](#test-cases)
+* [Test Suites](#test-suites)
+* [Test Log and Test Report](#test-log-and-test-report)
+
+### Test Cases
 
 Each Test Case verifies different API functionalities, ensuring the expected responses and statuses are returned.  
   
@@ -70,10 +72,9 @@ Expected Response: HTTP 400 Bad Request, Message: "search.query: size must be be
   
 Method: searchJokesByText(HelperFunctions.getRandomString(121))  
 Description: This test attempts to search with a too long text (more than 120 characters) to confirm the API enforces the maximum length restriction.  
-Expected Response: HTTP 400 Bad Request, Message: "search.query: size must be between 3 and 120"  
-
+Expected Response: HTTP 400 Bad Request, Message: "search.query: size must be between 3 and 120"    
   
-<b>Test Suites</b>
+### Test Suites   
 
 1. ChuckNorrisApiRegressionSuite
 
@@ -87,6 +88,7 @@ The TestNG suite ChuckNorrisApiRegressionPositiveTestsSuite is a subset of regre
   
 The TestNG suite ChuckNorrisApiRegressionNegativeTestsSuite is a subset of regression tests focused on negative test cases. It ensures that the API properly handles invalid inputs and edge cases.
 
-<b>Test Reports and Test Logs</b>
+### Test Log and Test Report  
+  
 * After each run, Test Log is stored in a timestamped .log file within the 'test_logs', while the Test Report is stored in a timestamped directory within the 'test_reports'.
 * Each report includes an 'html' directory where the report is presented with a more modern design.
