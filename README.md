@@ -90,5 +90,5 @@ The TestNG suite ChuckNorrisApiRegressionNegativeTestsSuite is a subset of regre
 
 ### Test Log and Test Report  
   
-* After each run, Test Log is stored in a timestamped .log file within the 'test_logs', while the Test Report is stored in a timestamped directory within the 'test_reports'.
+* After each run, Test Log is stored in a timestamped .log file within the 'test_logs' directory, while the Test Report is stored in a timestamped directory within the 'test_reports' directory.
 * Each report includes an 'html' directory where the report is presented with a more modern design.
