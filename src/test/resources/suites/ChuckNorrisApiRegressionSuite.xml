@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ChuckNorrisApiRegressionSuite" >
+	<listeners>
+        <listener class-name="helperfunctions.TestListener"/>
+    </listeners>
+    <test name="ChuckNorrisApiRegression">
+        <classes>
+            <class name="tests.ChuckNorrisApiTests"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ChuckNorrisApiRegressionPositiveTestsSuite" >
+	<listeners>
+        <listener class-name="helperfunctions.TestListener"/>
+    </listeners>
+    <test name="ChuckNorrisApiPositiveTests">
+        <classes>
+            <class name="tests.ChuckNorrisApiTests">
+            	<methods>
+            		<include name="getRandomJoke" />
+            		<include name="getCategories" />
+            		<include name="getRandomJokeFromCategory" />
+            		<include name="searchJokesByText" />
+            	</methods>
+            </class>
+        </classes>
+    </test>
+</suite>
