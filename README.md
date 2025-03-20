@@ -88,5 +88,5 @@ The TestNG suite ChuckNorrisApiRegressionPositiveTestsSuite is a subset of regre
 The TestNG suite ChuckNorrisApiRegressionNegativeTestsSuite is a subset of regression tests focused on negative test cases. It ensures that the API properly handles invalid inputs and edge cases.
 
 <b>Test Reports and Test Logs</b>
-* After each run, timestamped test log is stored in the 'test_logs' directory, while the Test Report is stored in a timestamped folder within the 'test_reports' directory.
+* After each run, Test Log is stored in a timestamped .log file within the 'test_logs', while the Test Report is stored in a timestamped directory within the 'test_reports'.
 * Each report includes an 'html' directory where the report is presented with a more modern design.
