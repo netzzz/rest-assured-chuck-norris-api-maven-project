@@ -1,26 +1,10 @@
 <h3>Chuck Norris API Testing Project written using REST Assured and POM Design Pattern</h3>  
-  
-* Follow these Steps to Run Test:  
-  
-1) Clone the Repository  
-2) Open the Project in an IDE  
-3) Update the Maven Project  
-4) Install TestNG (if not already installed)  
-5) Run the Test Suite from the IDE or via the command line:  
-```
-mvn -Dlog4j.configurationFile=src\test\resources\loggerconfig\log4j2.xml -Dsurefire.suiteXmlFiles=src\test\resources\suites\ChuckNorrisApiRegressionSuite.xml test
-```
-  
-* [Chuck Norris API Documentation](https://api.chucknorris.io/)
-  
----
-      
     
-<h3>Test Documentation:</h3>
-
 * [Test Cases](#test-cases)
 * [Test Suites](#test-suites)
 * [Test Log and Test Report](#test-log-and-test-report)
+* [Instructions to Run the Test Suite](#instructions-to-run-the-test-suite)
+* [API Documentation](#api-documentation)
 
 ### Test Cases
 
@@ -82,13 +66,31 @@ The TestNG suite ChuckNorrisApiRegressionSuite is designed to execute all test c
 
 2. ChuckNorrisApiRegressionPositiveTestsSuite
 
-The TestNG suite ChuckNorrisApiRegressionPositiveTestsSuite is a subset of regression tests focused on positive test cases. It ensures that the core API functionalities are working as expected.  
+The TestNG suite ChuckNorrisApiRegressionPositiveTestsSuite is a subset of regression tests focused on positive test cases.    
+It ensures that the core API functionalities are working as expected.  
 
 3. huckNorrisApiRegressionNegativeTestsSuite
   
-The TestNG suite ChuckNorrisApiRegressionNegativeTestsSuite is a subset of regression tests focused on negative test cases. It ensures that the API properly handles invalid inputs and edge cases.
+The TestNG suite ChuckNorrisApiRegressionNegativeTestsSuite is a subset of regression tests focused on negative test cases.  
+It ensures that the API properly handles invalid inputs and edge cases.
 
 ### Test Log and Test Report  
   
-* After each run, Test Log is stored in a timestamped .log file within the 'test_logs' directory, while the Test Report is stored in a timestamped directory within the 'test_reports' directory.
+* After each run, Test Log is stored in a timestamped .log file within the 'test_logs' directory,  
+  while the Test Report is stored in a timestamped directory within the 'test_reports' directory.  
 * Each report includes an 'html' directory where the report is presented with a more modern design.
+
+### Instructions to Run the Test Suite
+  
+1) Clone the Repository  
+2) Open the Project in an IDE  
+3) Update the Maven Project  
+4) Install TestNG (if not already installed)  
+5) Run the Test Suite from the IDE or via the command line:  
+```
+mvn -Dlog4j.configurationFile=src\test\resources\loggerconfig\log4j2.xml -Dsurefire.suiteXmlFiles=src\test\resources\suites\ChuckNorrisApiRegressionSuite.xml test
+```
+
+### API Documentation  
+
+[Chuck Norris API Documentation](https://api.chucknorris.io/)
