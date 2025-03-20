@@ -86,7 +86,7 @@ It ensures that the API properly handles invalid inputs and edge cases.
 2) Open the Project in an IDE  
 3) Update the Maven Project  
 4) Install TestNG (if not already installed)  
-5) Run the Test Suite via the Command Line:  
+5) Run the Test Suite via the Command Line Terminal:  
 ```
 mvn -Dlog4j.configurationFile=src\test\resources\loggerconfig\log4j2.xml -Dsurefire.suiteXmlFiles=src\test\resources\suites\ChuckNorrisApiRegressionSuite.xml test
 ```
